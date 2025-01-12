@@ -14,12 +14,9 @@
   <p align="center">Home Page</p>
 </div>
 
-# **Youtube Video for step by step Demonstration!**
-[![Video Tutorial](https://img.youtube.com/vi/g8X5AoqCJHc/0.jpg)](https://youtu.be/g8X5AoqCJHc)
 
 
-
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!!
+# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project
 
 ### **Phase 1: Initial Setup and Deployment**
 
@@ -34,7 +31,7 @@
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/N4si/DevSecOps-Project.git
+   git clone  https://github.com/HenryKum23/Netflix_Clone.git
     ```
     
 
@@ -178,7 +175,7 @@ Click on Apply and Save
 
 We will install a sonar scanner in the tools.
 
-Create a Jenkins webhook
+Create a Jenkins webhook for it to be possible for Sonarqube to communicate with Jenkins
 
 1. **Configure CI/CD Pipeline in Jenkins:**
 - Create a CI/CD pipeline in Jenkins to automate your application deployment.
@@ -228,7 +225,7 @@ pipeline {
 }
 ```
 
-Certainly, here are the instructions without step numbers:
+Here are instructions to follow in no particular order:
 
 **Install Dependency-Check and Docker Tools in Jenkins**
 
