@@ -74,8 +74,7 @@ pipeline{
             steps{
                 script{
                     dir('Kubernetes') {
-                        withKubeConfig(caCertificate: '', clusterName: '
-Henry-eks-Cluster', contextName: 'arn:aws:eks:us-east-2:396608779279:cluster/Henry-eks-Cluster', credentialsId: 'kubeconfig', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
+                        withKubeConfig(caCertificate: '', clusterName: 'Henry-eks-Cluster', contextName: 'arn:aws:eks:us-east-2:396608779279:cluster/Henry-eks-Cluster', credentialsId: 'k8s', namespace: 'henryname', restrictKubeConfigAccess: false, serverUrl: '') {
                                 sh 'kubectl apply -f deployment.yml'
                                 sh 'kubectl apply -f service.yml'
                         }   
