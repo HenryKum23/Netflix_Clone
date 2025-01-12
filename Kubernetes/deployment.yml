@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: netflix
+  name: netflix-deployment   # Name of the deployment
   labels:
     app: netflix-app
 spec:
@@ -15,7 +15,8 @@ spec:
         app: netflix-app
     spec:
       containers:
-      - name: netflixcc
+      - name: netflix-container   # Name of the container (different from the deployment name)
         image: henrykum23/netflix:latest
         ports:
         - containerPort: 80
+
