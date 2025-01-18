@@ -198,7 +198,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/HenryKum23/Netflix_Clone.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -288,7 +288,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/N4si/DevSecOps-Project.git'
+                git branch: 'main', url: 'https://github.com/HenryKum23/Netflix_Clone.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -340,14 +340,14 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name netflix -p 8081:80 nasi101/netflix:latest'
+                sh 'docker run -d --name netflixc -p 8081:80 henrykum23/netflix:latest'
             }
         }
     }
 }
 
 
-If you get docker login failed errorr
+Add jenkins user to the docker group
 
 sudo su
 sudo usermod -aG docker jenkins
@@ -750,5 +750,3 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 
 1. **Cleanup AWS EC2 Instances:**
     - Terminate AWS EC2 instances that are no longer needed.
-# Netflix_Clone_project
-# Netflix_Clone_proj
