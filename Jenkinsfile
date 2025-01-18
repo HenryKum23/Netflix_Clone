@@ -74,9 +74,9 @@ pipeline{
             steps{
                 script{
                     dir('Kubernetes') {
-                        withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'Kube-Config', namespace: '',                         restrictKubeConfigAccess: false, serverUrl: '') {
-                            sh 'kubectl apply -f deployment.yml'
-                            sh 'kubectl apply -f service.yml'
+                        withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'Kube-Config', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
+                                sh 'kubectl apply -f deployment.yml'
+                                sh 'kubectl apply -f service.yml'
                         }   
                     }
                 }
